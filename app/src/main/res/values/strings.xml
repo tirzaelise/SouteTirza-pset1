@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Mr. Potato Head</string>
+
+    <string name="arms">Arms</string>
+    <string name="ears">Ears</string>
+    <string name="eyebrows">Eyebrows</string>
+    <string name="eyes">Eyes</string>
+    <string name="glasses">Glasses</string>
+    <string name="hat">Hat</string>
+    <string name="mouth">Mouth</string>
+    <string name="mustache">Mustache</string>
+    <string name="nose">Nose</string>
+    <string name="shoes">Shoes</string>
+
+    <string name="bodyDesc">Mr. Potato Head\'s body</string>
+    <string name="armsDesc">Mr. Potato Head\'s arms</string>
+    <string name="earsDesc">Mr. Pototo Head\'s ears</string>
+    <string name="eyebrowsDesc">Mr. Potato Head\'s eyebrows</string>
+    <string name="eyesDesc">Mr. Potato Head\'s eyes</string>
+    <string name="glassesDesc">Mr. Potato Head\'s glasses</string>
+    <string name="hatDesc">Mr. Potato Head\'s hat</string>
+    <string name="mouthDesc">Mr. Potato Head\'s mouth</string>
+    <string name="mustacheDesc">Mr. Potato Head\'s mustache</string>
+    <string name="noseDesc">Mr. Potato Head\'s nose</string>
+    <string name="shoesDesc">Mr. Potato Head\'s shoes</string>
+</resources>

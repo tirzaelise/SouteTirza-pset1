@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Create a portrait/vertical LinearLayout that wraps the RelativeLayout and GridLayout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/portraitLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.tirza.soutetirza_pset1.MainActivity"
+    android:baselineAligned="false">
+
+    <!-- Create a RelativeLayout for the text and Mr. Potato Head's body and body parts -->
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="20"
+        android:id="@+id/imageLayout">
+
+        <!-- Write 'Mr. Potato Head' -->
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/app_name"
+            android:id="@+id/potato"
+            android:textSize="20sp"/>
+
+        <!-- Create Mr. Potato Head's body -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/body"
+            android:id="@+id/body"
+            android:contentDescription="@string/bodyDesc"/>
+
+        <!-- Create Mr. Potato Head's arms -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arms"
+            android:id="@+id/arms"
+            android:visibility="invisible"
+            android:contentDescription="@string/armsDesc"/>
+
+        <!-- Create Mr. Potato Head's ears -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ears"
+            android:id="@+id/ears"
+            android:visibility="invisible"
+            android:contentDescription="@string/earsDesc"/>
+
+        <!-- Create Mr. Potato Head's eyebrows -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eyebrows"
+            android:id="@+id/eyebrows"
+            android:visibility="invisible"
+            android:contentDescription="@string/eyebrowsDesc"/>
+
+        <!-- Create Mr. Potato Head's eyes -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/eyes"
+            android:id="@+id/eyes"
+            android:visibility="invisible"
+            android:contentDescription="@string/eyesDesc"/>
+
+        <!-- Create Mr. Potato Head's glasses -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/glasses"
+            android:id="@+id/glasses"
+            android:visibility="invisible"
+            android:contentDescription="@string/glassesDesc"/>
+
+        <!-- Create Mr. Potato Head's hat -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/hat"
+            android:id="@+id/hat"
+            android:visibility="invisible"
+            android:contentDescription="@string/hatDesc"/>
+
+        <!-- Create Mr. Potato Head's mouth -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mouth"
+            android:id="@+id/mouth"
+            android:visibility="invisible"
+            android:contentDescription="@string/mouthDesc"/>
+
+        <!-- Create Mr. Potato Head's mustache -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mustache"
+            android:id="@+id/mustache"
+            android:visibility="invisible"
+            android:contentDescription="@string/mustacheDesc"/>
+
+        <!-- Create Mr. Potato Head's nose -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/nose"
+            android:id="@+id/nose"
+            android:visibility="invisible"
+            android:contentDescription="@string/noseDesc"/>
+
+        <!-- Create Mr. Potato Head's shoes -->
+        <ImageView
+            android:layout_below="@+id/potato"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shoes"
+            android:id="@+id/shoes"
+            android:visibility="invisible"
+            android:contentDescription="@string/shoesDesc"/>
+    </RelativeLayout>
+
+    <!-- Create a GridLayout for the checkboxes -->
+    <GridLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:useDefaultMargins="true"
+        android:alignmentMode="alignBounds"
+        android:columnOrderPreserved="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginEnd="40dp"
+        android:columnCount="3">
+
+        <!-- Create a checkbox for Mr. Potato Head's arms -->
+        <CheckBox
+            android:text="@string/arms"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:onClick="boxChecked"
+            android:id="@+id/armsBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's ears -->
+        <CheckBox
+            android:text="@string/ears"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:onClick="boxChecked"
+            android:id="@+id/earsBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's eyebrows -->
+        <CheckBox
+            android:text="@string/eyebrows"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:onClick="boxChecked"
+            android:id="@+id/eyebrowsBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's eyes -->
+        <CheckBox
+            android:text="@string/eyes"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:onClick="boxChecked"
+            android:id="@+id/eyesBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's glasses -->
+        <CheckBox
+            android:text="@string/glasses"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:onClick="boxChecked"
+            android:id="@+id/glassesBox"/>
+
+        <!-- Create some extra space between the two rows of checkboxes -->
+        <Space
+            android:layout_row="1"
+            android:layout_rowSpan="4"
+            android:layout_gravity="fill"
+            />
+
+        <!-- Create a checkbox for Mr. Potato Head's hat -->
+        <CheckBox
+            android:text="@string/hat"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:onClick="boxChecked"
+            android:id="@+id/hatBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's mouth -->
+        <CheckBox
+            android:text="@string/mouth"
+            android:layout_column="2"
+            android:layout_row="1"
+            android:onClick="boxChecked"
+            android:id="@+id/mouthBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's mustache -->
+        <CheckBox
+            android:text="@string/mustache"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:onClick="boxChecked"
+            android:id="@+id/mustacheBox"/>
+
+        <!-- Create a checkbox for Mr. Potato Head's nose -->
+        <CheckBox
+            android:text="@string/nose"
+            android:layout_column="2"
+            android:layout_row="3"
+            android:onClick="boxChecked"
+            android:id="@+id/noseBox" />
+
+        <!-- Create a checkbox for Mr. Potato Head's shoes -->
+        <CheckBox
+            android:text="@string/shoes"
+            android:layout_column="2"
+            android:layout_row="4"
+            android:onClick="boxChecked"
+            android:id="@+id/shoesBox"/>
+    </GridLayout>
+</LinearLayout>
